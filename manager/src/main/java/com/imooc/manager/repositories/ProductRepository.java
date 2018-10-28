@@ -1,0 +1,10 @@
+package com.imooc.manager.repositories;
+
+import com.imooc.entity.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.data.repository.CrudRepository;
+
+public interface ProductRepository extends JpaRepository<Product, String>, CrudRepository<Product, String>, JpaSpecificationExecutor<Product>{
+
+}
